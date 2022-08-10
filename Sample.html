@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belated Happy 1st Anniversary baby!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="top-bar">
+      <i class="material-icons">expand_more</i>
+      <span><center>Songs that reminds me of you</center></span>
+      <i class="material-icons">more_horiz</i>
+    </div>
+    <div class="img-area">
+      <img src="" alt="">
+    </div>
+    <div class="song-details">
+      <p class="name"></p>
+      <p class="artist"></p>
+    </div>
+    <div class="progress-area">
+      <div class="progress-bar">
+        <audio id="main-audio" src="An Art Gallery Could Never Be As Unique As You"></audio>
+      </div>
+      <div class="song-timer">
+        <span class="current-time">0:00</span>
+        <span class="max-duration"></span>
+      </div>
+    </div>
+    <div class="controls">
+      <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+      <i id="prev" class="material-icons">skip_previous</i>
+      <div class="play-pause">
+        <i class="material-icons play">play_arrow</i>
+      </div>
+      <i id="next" class="material-icons">skip_next</i>
+      <i id="more-music" class="material-icons">queue_music</i>
+    </div>
+    <div class="music-list">
+      <div class="header">
+        <div class="row">
+          <i class= "list material-icons">queue_music</i>
+          <span>Music list</span>
+        </div>
+        <i id="close" class="material-icons">close</i>
+      </div>
+      <ul>
+        <li>
+			<div class="row">
+				<span><b>I</b>'d Lie</span>
+			</div>
+		</li>
+		 <li>
+			<div class="row">
+				<span><b>L</b>ows</span>
+			</div>
+		</li>
+		 <li>
+			<div class="row">
+				<span><b>O</b>urs</span>
+			</div>
+		</li>
+		<li>
+			<div class="row">
+				<span>An Art Gallery Could Ne<b>v</b>er Be As Unique As You</span>
+			</div>
+		</li>
+		<li>
+			<div class="row">
+				<span>Min<b>e</b></span>
+			</div>
+		</li>
+		<li>
+			<div class="row">
+				<span>Grow Old with <b>You</b></span>
+			</div>
+		</li>
+		<li>
+			<div class="row">
+				<span>Best Part o<b>f</b> Me</span>
+			</div>
+		</li>
+		<li>
+			<div class="row">
+				<span>I D<b>o</b>n't Care</span>
+			</div>
+		</li>
+		<li>
+			<div class="row">
+				<span><b>R</b>eal Thing</span>
+			</div>
+		</li>
+		<li>
+			<div class="row">
+				<span>Sol <b>a</b>t Luna</span>
+			</div>
+		</li>
+		<li>
+			<div class="row">
+				<span><b>Lifetime</b></span>
+			</div>
+		</li>
+      </ul>
+    </div>
+	</div>
+	<div class="container">
+		<button type="submit" class="btn" onclick="openPopup()">hey, click me!</button>
+		<div class= "popup" id="popup">
+			<img src="" alt="">
+			<h2>Hi, belated happy 1st annniversary!</h2>
+			<p>I'm sorry ngayon ko lang kasi natapos and it's just a virtual gift but I hope magustuhan mo?</p>
+			<button type="button" onclick="closePopup()">osige</button>
+		</div>
+	</div>
+  </div>
+
+  <script src="js/music-list.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+  let popup = document.getElementById("popup");
+  
+  function openPopup(){
+	popup.classList.add("open-popup");
+  }
+  function closePopup(){
+	popup.classList.remove("open-popup");
+  }
+  </script>
+</body>
+</html>
